@@ -1,0 +1,12 @@
+//reset CSS
+@import "CSS/normalize.css";
+
+//import variables and mixins
+@import "utils/variables";
+@import "utils/mixins";
+
+//import styles
+@import "base/general";
+@import "layout/header";
+@import "layout/section";
+@import "layout/footer";
