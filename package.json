@@ -1,0 +1,22 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./Sass/main.scss:./CSS/style.css",
+    "prefix": "postcss ./CSS/style.css --use autoprefixer -d ./CSS/prefixed/",
+    "browserslist": "last 4 versions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGaetanGranstek/RossignolGaetan_3_25072021.git"
+  },
+  "author": "Gaetan.R",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGaetanGranstek/RossignolGaetan_3_25072021/issues"
+  },
+  "homepage": "https://github.com/RGaetanGranstek/RossignolGaetan_3_25072021#readme"
+}
