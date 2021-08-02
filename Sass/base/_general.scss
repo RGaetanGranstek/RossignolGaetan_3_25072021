@@ -1,3 +1,8 @@
 body {
-    
-}
+    font-family: $font-text;
+    font-weight: normal;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-logo-title;
+    font-weight: normal;
+  }
