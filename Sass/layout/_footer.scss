@@ -1,3 +1,32 @@
 footer {
-
+    position: absolute;
+    width: 100%;
+    height: 200px;
+    background-color: $color-grey-dark;
+    div {
+        margin: 25px;
+        img {
+            height: 20px;
+            filter: brightness(20);
+        }
+        li { 
+            list-style-type: none;
+            a {
+                display: flex;
+                align-items: center;
+                color: $color-white;
+                margin: 7px 0;
+                &:hover {
+                    text-decoration: underline;
+                }
+                p {
+                    margin:0;
+                }
+                i {
+                    width: 20px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
 }
