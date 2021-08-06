@@ -6120,6 +6120,38 @@ readers do not read off random characters that represent icons */
 }
 
 body {
+  background: #ffffff;
+}
+
+#menu, #reservation, #mainContent {
+  background: #f6f6f6;
+}
+
+#localisation {
+  background: #eaeaea;
+}
+
+#functioning {
+  background: #ffffff;
+}
+
+footer {
+  background: #353535;
+}
+
+.imgMenu {
+  width: 335px;
+  height: 255px;
+  border-radius: 0;
+}
+
+.imgIndex {
+  width: 335px;
+  height: 255px;
+  border-radius: 20px;
+}
+
+body {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   margin: 0;
@@ -6128,9 +6160,20 @@ body {
 body header {
   text-align: center;
 }
-body h1, body h2, body h3, body h4, body h5, body h6 {
+body .title {
   font-family: "Shrikhand", cursive;
-  font-weight: normal;
+}
+body .buttonPink {
+  padding: 15px;
+  border-radius: 30px;
+  background: linear-gradient(165deg, #FF79DA, #9356DC);
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+}
+body .buttonPink p {
+  color: #ffffff;
+  margin: 0;
 }
 body ul {
   padding: 0;
@@ -6151,17 +6194,12 @@ header #localisation {
   height: 50px;
 }
 header #reservation {
+  display: flex;
+  flex-direction: column;
   height: 290px;
 }
 
-section img {
-  height: 255px;
-  width: 335px;
-}
-section#functioning ol {
-  margin: auto;
-}
-section#functioning ol a {
+section#functioning a {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -6171,7 +6209,6 @@ footer {
   position: absolute;
   width: 100%;
   height: 200px;
-  background-color: #353535;
 }
 footer div {
   margin: 25px;
@@ -6186,7 +6223,7 @@ footer div li {
 footer div li a {
   display: flex;
   align-items: center;
-  color: #f6f6f6;
+  color: #ffffff;
   margin: 7px 0;
 }
 footer div li a:hover {

@@ -7,9 +7,18 @@ body {
   header {
     text-align: center;
   }
-  h1, h2, h3, h4, h5, h6 {
+  .title {
     font-family: $font-logo-title;
-    font-weight: normal;
+  }
+  .buttonPink {
+    @include button-pink;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    p {
+      color: $color-white;
+      margin: 0;
+    }
   }
   ul {
     padding: 0;

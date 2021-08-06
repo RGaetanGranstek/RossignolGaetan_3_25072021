@@ -9,6 +9,8 @@ header {
         height: 50px;
     }
     #reservation {
+        display: flex;
+        flex-direction: column;
         height: 290px;
     }
 }

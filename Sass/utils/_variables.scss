@@ -4,12 +4,18 @@ $color-pink: #FF79DA;
 $color-green-light: #99E2D0;
 
 $color-grey-dark: #353535;
-$color-white: #f6f6f6;
+$color-grey: #eaeaea;
+$color-grey-light: #f6f6f6;
+$color-white: #ffffff;
 
 //font families
 $font-text: 'Roboto', sans-serif;
 $font-logo-title: 'Shrikhand', cursive;
 
-//Weights
+//Border-radius
+$border-none: 0;
+$border-radius: 20px;
 
 //sizes
+$img-defaut-width: 335px;
+$img-defaut-height: 255px;

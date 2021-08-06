@@ -1,17 +1,9 @@
 section {
-    img {
-        height: 255px;
-        width: 335px;
-    }
     &#functioning {
-        // list-style-position: inside;
-        ol {
-            margin: auto;
-            a {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-            }
+        a {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
         }
     }
 }

@@ -1,4 +1,4 @@
-//sass breakpoints
+//breakpoints
 @mixin breakpoint($size-screen) {
     @if $size-screen == desktop {
         @media (min-width: 70em) { 
@@ -25,4 +25,43 @@
             @content ; 
         }
     }
+}
+
+// background
+@mixin background-color($background-color: $color-white) {
+    background: $background-color;
+}
+body {
+    @include background-color;
+}
+#menu, #reservation, #mainContent {
+    @include background-color($background-color: $color-grey-light);
+}
+#localisation {
+    @include background-color($background-color: $color-grey);
+}
+#functioning {
+    @include background-color($background-color: $color-white);
+}
+footer {
+    @include background-color($background-color: $color-grey-dark);
+}
+
+// image parameters
+@mixin size ($width, $height, $border) {
+    width: $width;
+    height: $height;
+    border-radius: $border;
+}
+.imgMenu {
+    @include size ($img-defaut-width,$img-defaut-height,$border-none);
+}
+.imgIndex {
+    @include size ($img-defaut-width,$img-defaut-height,$border-radius);
+}
+
+@mixin button-pink {
+    padding: 15px;
+    border-radius: 30px;
+    background: linear-gradient(165deg, $color-pink, $color-purple);
 }
