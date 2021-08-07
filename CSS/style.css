@@ -6140,22 +6140,25 @@ footer {
 }
 
 .imgMenu {
-  width: 335px;
+  width: 100%;
   height: 255px;
   border-radius: 0;
 }
 
 .imgIndex {
-  width: 335px;
+  width: 100%;
   height: 255px;
   border-radius: 20px;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+}
+body img {
+  object-fit: cover;
 }
 body header {
   text-align: center;
@@ -6182,9 +6185,56 @@ body a {
   color: black;
   text-decoration: none;
   width: max-content;
+  align-self: center;
 }
 
-header img {
+ol {
+  position: relative;
+  top: -12px;
+  list-style: none;
+  counter-reset: li;
+  padding: 0 0 0 10px;
+}
+ol > li {
+  counter-increment: li;
+}
+ol > li a {
+  top: -25px;
+  border-radius: 25px;
+  background-color: #f6f6f6;
+  box-shadow: 0 4px 10px #d5d5d5;
+  padding: 10px 0 10px 20px;
+  width: auto;
+}
+ol > li a p {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+ol > li a:hover {
+  background-color: #f5edff;
+}
+ol > li a:hover i {
+  color: #9356DC;
+}
+ol > li::before {
+  content: counter(li);
+  color: #ffffff;
+  background-color: #9356DC;
+  border-radius: 45px;
+  display: inline-block;
+  width: 20px;
+  padding: 2px;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  right: -15px;
+}
+
+header img:first-of-type {
+  width: 40%;
+  margin: 0 30%;
   padding: 20px 0 10px 0;
 }
 header #localisation {
@@ -6192,17 +6242,48 @@ header #localisation {
   justify-content: center;
   align-items: center;
   height: 50px;
+  box-shadow: inset 0 3px 10px #d5d5d5, inset 0 -3px 10px #f6f6f6;
+}
+header #localisation p {
+  padding-left: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 header #reservation {
   display: flex;
   flex-direction: column;
   height: 290px;
+  justify-content: center;
+}
+header #reservation h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  width: 65%;
+  align-self: center;
+  margin: 5px auto;
+}
+header #reservation > p:first-of-type {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin: 16px 2%;
+}
+header #reservation a {
+  margin: 15px auto;
 }
 
-section#functioning a {
+section {
+  padding: 30px 20px 0 20px;
+}
+section#functioning {
+  height: 420px;
+}
+section#functioning ol a {
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+section#functioning ol a > i, section#functioning ol a > p {
+  padding-left: 20px;
 }
 
 footer {

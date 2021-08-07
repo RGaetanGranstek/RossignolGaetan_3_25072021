@@ -27,24 +27,15 @@
     }
 }
 
+//reset
+@mixin reset{
+    margin: $margin;
+    padding: $padding;
+}
+
 // background
 @mixin background-color($background-color: $color-white) {
     background: $background-color;
-}
-body {
-    @include background-color;
-}
-#menu, #reservation, #mainContent {
-    @include background-color($background-color: $color-grey-light);
-}
-#localisation {
-    @include background-color($background-color: $color-grey);
-}
-#functioning {
-    @include background-color($background-color: $color-white);
-}
-footer {
-    @include background-color($background-color: $color-grey-dark);
 }
 
 // image parameters
@@ -53,15 +44,26 @@ footer {
     height: $height;
     border-radius: $border;
 }
-.imgMenu {
-    @include size ($img-defaut-width,$img-defaut-height,$border-none);
-}
-.imgIndex {
-    @include size ($img-defaut-width,$img-defaut-height,$border-radius);
-}
 
+//button-pink
 @mixin button-pink {
     padding: 15px;
     border-radius: 30px;
     background: linear-gradient(165deg, $color-pink, $color-purple);
+}
+
+//font Parameters
+@mixin font-parameters ($f-parameters){
+    @if $f-parameters == pBold {
+        font-size: $font-P;
+        font-weight: $font-M;
+    }
+    @else if $f-parameters == p {
+        font-size: $font-P;
+        font-weight: $font-S;
+    }
+    @else if $f-parameters == h1 {
+        font-size: $font-H;
+        font-weight: $font-M;
+    }
 }

@@ -1,14 +1,42 @@
+// background
+body {
+  @include background-color;
+}
+#menu, #reservation, #mainContent {
+  @include background-color($background-color: $color-grey-light);
+}
+#localisation {
+  @include background-color($background-color: $color-grey);
+}
+#functioning {
+  @include background-color($background-color: $color-white);
+}
+footer {
+  @include background-color($background-color: $color-grey-dark);
+}
+
+// image parameters
+.imgMenu {
+  @include size ($img-menu-width,$img-defaut-height,$border-none);
+}
+.imgIndex {
+  @include size ($img-defaut-width,$img-defaut-height,$border-radius);
+}
+
+// General
 body {
   @include breakpoint(mobileonly);
-  font-family: $font-text;
+  @include reset;
+  font-family: $font-family-text;
   font-weight: normal;
-  margin: 0;
-  padding: 0;
+  img {
+    object-fit: cover;
+  }
   header {
     text-align: center;
   }
   .title {
-    font-family: $font-logo-title;
+    font-family: $font-family-logo-title;
   }
   .buttonPink {
     @include button-pink;
@@ -27,5 +55,52 @@ body {
     color: black;
     text-decoration: none;
     width: max-content;
+    align-self: center;
+  }
+}
+
+
+// list OL
+ol {
+  position: relative;
+  top: -12px;
+  list-style: none; 
+  counter-reset: li;
+  padding: 0 0 0 10px;
+  &>li {
+    counter-increment: li;
+    // background-color: yellowgreen;
+    a {
+      top: -25px;
+      border-radius: 25px;
+      background-color: $color-grey-light;
+      box-shadow: 0 4px 10px $color-grey-shadow;
+      padding: 10px 0 10px 20px;
+      width: auto;
+      p {
+        @include font-parameters(pBold)
+      }
+      &:hover {
+        background-color: $color-purple-light;
+        i {
+          color: $color-purple;
+        }
+      }
+    }
+    &::before {
+    content: counter(li); 
+    color: $color-white;
+    background-color: $color-purple;
+    border-radius: 45px;
+    display: inline-block;
+    width: 20px;
+    padding: 2px;
+    margin-left: -1.5em;
+    margin-right: 0.5em; 
+    text-align: center;
+    position: relative;
+    top: 50px;
+    right: -15px;
+    }
   }
 }

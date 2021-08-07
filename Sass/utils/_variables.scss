@@ -1,21 +1,39 @@
-//sass colors as defined
+//colors as defined
 $color-purple: #9356DC;
 $color-pink: #FF79DA;
 $color-green-light: #99E2D0;
 
+//color extracted mockup
+$color-purple-light: #f5edff;
 $color-grey-dark: #353535;
+$color-grey-shadow: #d5d5d5;
 $color-grey: #eaeaea;
 $color-grey-light: #f6f6f6;
 $color-white: #ffffff;
 
-//font families
-$font-text: 'Roboto', sans-serif;
-$font-logo-title: 'Shrikhand', cursive;
+//font family
+$font-family-text: 'Roboto', sans-serif;
+$font-family-logo-title: 'Shrikhand', cursive;
+
+//reset
+$margin: 0;
+$padding: 0;
+
+//size
+$font-title: 1.4em;
+$font-H: 1.5em;
+$font-P: 1.1em;
+
+//weight
+$font-S: 400;
+$font-L: 700;
+$font-M: bold;
 
 //Border-radius
 $border-none: 0;
 $border-radius: 20px;
 
-//sizes
-$img-defaut-width: 335px;
+//sizes img
+$img-defaut-width: 100%;
+$img-menu-width: 100%;
 $img-defaut-height: 255px;
