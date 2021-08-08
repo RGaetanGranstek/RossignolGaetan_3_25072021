@@ -6123,7 +6123,7 @@ body {
   background: #ffffff;
 }
 
-#menu, #reservation, #mainContent {
+#menu, .titleMenu, #reservation, #mainContent {
   background: #f6f6f6;
 }
 
@@ -6234,6 +6234,24 @@ ol > li::before {
   right: -15px;
 }
 
+.fa-heart {
+  transition: all 1s ease-out;
+}
+
+.fa-heart:hover, .fa-heart:focus {
+  zoom: 1.2;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+
+header.arrow {
+  display: flex;
+  text-align: left;
+  margin: auto 65px auto 20px;
+}
+header.arrow img:first-of-type {
+  width: 52%;
+  margin: 0 27%;
+}
 header img:first-of-type {
   width: 40%;
   margin: 0 30%;
@@ -6246,10 +6264,13 @@ header #localisation {
   height: 50px;
   box-shadow: inset 0 3px 10px #d5d5d5, inset 0 -3px 10px #f6f6f6;
 }
-header #localisation p {
-  padding-left: 15px;
+header #localisation input {
+  border: none;
+  background-color: #eaeaea;
+  width: 155px;
+  text-align: center;
   font-size: 1.1em;
-  font-weight: bold;
+  font-weight: 400;
 }
 header #reservation {
   display: flex;
@@ -6273,7 +6294,7 @@ header #reservation a {
   margin: 15px auto;
 }
 
-section#functioning, section#mainContent {
+section#functioning, section#mainContent, section#menu {
   padding: 30px 20px 45px 20px;
 }
 section#functioning {
@@ -6290,6 +6311,9 @@ section#functioning ol a > i, section#functioning ol a > p {
 section#mainContent .boxImg .imgIndex {
   box-shadow: 2px 2px 15px #d5d5d5;
   margin: 20px auto;
+}
+section#mainContent .boxImg .imgIndex:hover {
+  cursor: pointer;
 }
 section#mainContent .boxImg .infoImg {
   height: 80px;

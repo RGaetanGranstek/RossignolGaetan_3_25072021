@@ -2,7 +2,7 @@
 body {
   @include background-color;
 }
-#menu, #reservation, #mainContent {
+#menu, .titleMenu, #reservation, #mainContent {
   @include background-color($background-color: $color-grey-light);
 }
 #localisation {
@@ -103,4 +103,12 @@ ol {
     right: -15px;
     }
   }
+}
+
+// heart animation
+.fa-heart {
+  transition: all 1s ease-out;
+}
+.fa-heart:hover, .fa-heart:focus {
+  @include heart-pink;
 }

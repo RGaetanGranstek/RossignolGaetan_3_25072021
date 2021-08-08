@@ -29,8 +29,8 @@
 
 //reset
 @mixin reset{
-    margin: $margin;
-    padding: $padding;
+    margin: 0;
+    padding: 0;
 }
 
 // background
@@ -45,14 +45,20 @@
     border-radius: $border;
 }
 
-//button-pink
+// button-pink
 @mixin button-pink {
     padding: 15px;
     border-radius: 30px;
     background: linear-gradient(165deg, $color-pink, $color-purple);
 }
 
-//font Parameters
+// heart-pink
+@mixin heart-pink {
+    zoom: 1.2;
+    background: linear-gradient($color-pink, $color-purple);
+}
+
+// font Parameters
 @mixin font-parameters ($f-parameters){
     @if $f-parameters == pBold {
         font-size: $font-P;

@@ -1,4 +1,13 @@
 header {
+    &.arrow {
+        display: flex;
+        text-align: left;
+        margin: auto 65px auto 20px;
+        img:first-of-type {
+            width: 52%;
+            margin: 0 27%;
+        }
+    }
     img:first-of-type {
         width: 40%;
         margin: 0 30%;
@@ -10,9 +19,12 @@ header {
         align-items: center;
         height: 50px;
         box-shadow: inset 0 3px 10px $color-grey-shadow, inset 0 -3px 10px $color-grey-light;
-        p {
-            padding-left: 15px;
-            @include font-parameters(pBold)
+        input {
+            border: none;
+            background-color: $color-grey;
+            width: 155px;
+            text-align: center;
+            @include font-parameters(p)
         }
     }
     #reservation {

@@ -1,5 +1,5 @@
 section {
-    &#functioning, &#mainContent {
+    &#functioning, &#mainContent, &#menu {
         padding: 30px 20px 45px 20px;
     }
     &#functioning {
@@ -20,6 +20,9 @@ section {
             .imgIndex {
                 box-shadow: 2px 2px 15px $color-grey-shadow;
                 margin: 20px auto;
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .infoImg {
                 height: 80px;
