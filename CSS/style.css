@@ -6149,6 +6149,7 @@ footer {
   width: 100%;
   height: 255px;
   border-radius: 20px;
+  margin: auto;
 }
 
 body {
@@ -6158,6 +6159,7 @@ body {
   font-weight: normal;
 }
 body img {
+  display: block;
   object-fit: cover;
 }
 body header {
@@ -6271,8 +6273,8 @@ header #reservation a {
   margin: 15px auto;
 }
 
-section {
-  padding: 30px 20px 0 20px;
+section#functioning, section#mainContent {
+  padding: 30px 20px 45px 20px;
 }
 section#functioning {
   height: 420px;
@@ -6284,6 +6286,43 @@ section#functioning ol a {
 }
 section#functioning ol a > i, section#functioning ol a > p {
   padding-left: 20px;
+}
+section#mainContent .boxImg .imgIndex {
+  box-shadow: 2px 2px 15px #d5d5d5;
+  margin: 20px auto;
+}
+section#mainContent .boxImg .infoImg {
+  height: 80px;
+  margin: -100px 4px;
+  padding-left: 15px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+section#mainContent .boxImg > div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1em;
+  right: 1em;
+  background-color: #ffffff;
+  border-radius: 0 0 20px 20px;
+}
+section#mainContent .boxImg > div h3, section#mainContent .boxImg > div p {
+  margin: 0;
+  padding: 0;
+}
+section#mainContent .boxImg .new {
+  position: absolute;
+  right: 2.5em;
+  margin: -255px 0px;
+  background-color: #99E2D0;
+}
+section#mainContent .boxImg .new p {
+  color: #008766;
+  margin: 5px;
+}
+section#mainContent .boxImg .notNew {
+  display: none;
 }
 
 footer {

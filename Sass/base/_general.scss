@@ -17,10 +17,11 @@ footer {
 
 // image parameters
 .imgMenu {
-  @include size ($img-menu-width,$img-defaut-height,$border-none);
+  @include size ($img-defaut-width,$img-defaut-height,$border-none);
 }
 .imgIndex {
   @include size ($img-defaut-width,$img-defaut-height,$border-radius);
+  margin: auto;
 }
 
 // General
@@ -30,6 +31,7 @@ body {
   font-family: $font-family-text;
   font-weight: normal;
   img {
+    display: block;
     object-fit: cover;
   }
   header {
@@ -59,7 +61,6 @@ body {
   }
 }
 
-
 // list OL
 ol {
   position: relative;
@@ -69,7 +70,6 @@ ol {
   padding: 0 0 0 10px;
   &>li {
     counter-increment: li;
-    // background-color: yellowgreen;
     a {
       top: -25px;
       border-radius: 25px;

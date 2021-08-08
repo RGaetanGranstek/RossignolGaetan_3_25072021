@@ -1,5 +1,7 @@
 section {
-    padding: 30px 20px 0 20px;
+    &#functioning, &#mainContent {
+        padding: 30px 20px 45px 20px;
+    }
     &#functioning {
         height: 420px;
         ol {
@@ -10,6 +12,46 @@ section {
                 &>i, &>p {
                     padding-left: 20px;
                 }
+            }
+        }
+    }
+    &#mainContent {
+        .boxImg {
+            .imgIndex {
+                box-shadow: 2px 2px 15px $color-grey-shadow;
+                margin: 20px auto;
+            }
+            .infoImg {
+                height: 80px;
+                margin: -100px 4px;
+                padding-left: 15px;
+                padding-right: 20px;
+                justify-content: space-between;
+            }
+            &>div {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                background-color: $color-white;
+                border-radius: 0 0 20px 20px;
+                h3, p {
+                    @include reset;
+                }
+            }
+            .new {
+                position: absolute;
+                right: 2.5em;
+                margin: -255px 0px;
+                background-color: $color-green-light;
+                p {
+                    color: $color-green-dark;
+                    margin: 5px;
+                }
+            }
+            .notNew {
+                display: none;
             }
         }
     }
