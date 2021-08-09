@@ -1,18 +1,10 @@
 header {
-    &.arrow {
-        display: flex;
-        text-align: left;
-        margin: auto 65px auto 20px;
-        img:first-of-type {
-            width: 52%;
-            margin: 0 24.5%;
-        }
-    }
     img:first-of-type {
         width: 40%;
         margin: 0 28%;
         padding: 20px 0 10px 0;
     }
+    // Page Index
     #localisation {
         display: flex;
         justify-content: center;
@@ -46,4 +38,19 @@ header {
             margin: 15px auto;
         }
     }
+    // End Page Index
+    // Page Menu
+    &.arrow {
+        display: flex;
+        text-align: left;
+        margin: auto 65px auto 20px;
+        img:first-of-type {
+            width: 52%;
+            margin: 0 24.5%;
+        }
+        :hover {
+            box-shadow: 0 4px 10px $color-grey-shadow;
+        }
+    }
+    // End Page Menu
 }

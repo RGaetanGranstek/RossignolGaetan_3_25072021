@@ -1,4 +1,5 @@
 section {
+    // Page Index
     &#mainContent, &#menu {
         padding: 30px 20px 45px 20px;
     }
@@ -22,6 +23,7 @@ section {
                 box-shadow: 2px 2px 15px $color-grey-shadow;
                 margin: 20px auto;
                 &:hover {
+                    box-shadow: 0 0px 10px $color-grey-dark;
                     cursor: pointer;
                 }
             }
@@ -59,6 +61,8 @@ section {
             }
         }
     }
+    // End Page Index
+    // Page Menu
     &.titleMenu {
         position: relative;
         .titleMenuRestaurant {
@@ -76,4 +80,61 @@ section {
             @include font-parameters(titleMenu);
         }
     }
+    &#menu {
+        &>div {
+          margin-bottom: 20px;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            h2 {
+                @include font-parameters(p);
+                text-transform: uppercase;
+                margin-bottom: 4px;
+            }
+            .line {
+                height: 3px;
+                width: 40px;
+                background-color: $color-green-light;
+                margin-bottom: 5px;
+            }
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin: 10px;
+                width: 100%;
+                background-color: $color-white;
+                border-radius: $border-radius;
+                box-shadow: 0 4px 10px $color-grey-shadow;
+                h3 {
+                font-size: 1rem;
+                margin: 15px 10px 3px 10px;
+                }
+                p {
+                font-size: .9rem;
+                margin: 3px 25px 15px 10px;
+                }
+                .selectionButton {
+                display: flex;
+                flex-direction: row;
+                i {
+                    display: none;
+                }
+                }
+                &:hover {
+                .selectionButton i {
+                    display: initial;
+                    justify-content: inherit;
+                    margin: auto 20px;
+                    width: 70px;
+                    color: $color-white;
+                    background-color: $color-green-light;
+                    }
+                }
+            }
+        }
+    }
+    // End Page Menu
 }

@@ -6175,6 +6175,11 @@ body .buttonPink {
   display: flex;
   flex-direction: row;
   height: 20px;
+  margin: auto;
+}
+body .buttonPink:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 1px 5px #353535;
 }
 body .buttonPink p {
   color: #ffffff;
@@ -6234,39 +6239,12 @@ ol > li::before {
   right: -15px;
 }
 
-#menu div {
-  display: flex;
-  flex-direction: column;
-}
-#menu div .line {
-  height: 3px;
-  width: 40px;
-  background-color: #99E2D0;
-}
-#menu div h2 {
-  font-size: 1.1em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-#menu div a {
-  display: flex;
-}
-
 .fa-heart:hover {
   animation: fill 0.3s ease-in-out;
   zoom: 1.2;
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-header.arrow {
-  display: flex;
-  text-align: left;
-  margin: auto 65px auto 20px;
-}
-header.arrow img:first-of-type {
-  width: 52%;
-  margin: 0 24.5%;
-}
 header img:first-of-type {
   width: 40%;
   margin: 0 28%;
@@ -6308,6 +6286,18 @@ header #reservation > p:first-of-type {
 header #reservation a {
   margin: 15px auto;
 }
+header.arrow {
+  display: flex;
+  text-align: left;
+  margin: auto 65px auto 20px;
+}
+header.arrow img:first-of-type {
+  width: 52%;
+  margin: 0 24.5%;
+}
+header.arrow :hover {
+  box-shadow: 0 4px 10px #d5d5d5;
+}
 
 section#mainContent, section#menu {
   padding: 30px 20px 45px 20px;
@@ -6329,6 +6319,7 @@ section#mainContent .boxImg .imgIndex {
   margin: 20px auto;
 }
 section#mainContent .boxImg .imgIndex:hover {
+  box-shadow: 0 0px 10px #353535;
   cursor: pointer;
 }
 section#mainContent .boxImg .infoImg {
@@ -6382,6 +6373,59 @@ section.titleMenu .titleMenuRestaurant {
   font-size: 1.1em;
   font-weight: 600;
 }
+section#menu > div {
+  margin-bottom: 20px;
+}
+section#menu div {
+  display: flex;
+  flex-direction: column;
+}
+section#menu div h2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+section#menu div .line {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+  margin-bottom: 5px;
+}
+section#menu div a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px #d5d5d5;
+}
+section#menu div a h3 {
+  font-size: 1rem;
+  margin: 15px 10px 3px 10px;
+}
+section#menu div a p {
+  font-size: 0.9rem;
+  margin: 3px 25px 15px 10px;
+}
+section#menu div a .selectionButton {
+  display: flex;
+  flex-direction: row;
+}
+section#menu div a .selectionButton i {
+  display: none;
+}
+section#menu div a:hover .selectionButton i {
+  display: initial;
+  justify-content: inherit;
+  margin: auto 20px;
+  width: 70px;
+  color: #ffffff;
+  background-color: #99E2D0;
+}
 
 footer {
   position: absolute;
@@ -6400,7 +6444,6 @@ footer div li {
 }
 footer div li a {
   display: flex;
-  align-items: center;
   color: #ffffff;
   margin: 7px 0;
 }
@@ -6410,6 +6453,10 @@ footer div li a:hover {
   background: linear-gradient(165deg, #FF79DA, #9356DC);
   padding: 3px;
   margin: -3px;
+}
+footer div li a:hover:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 1px 5px #353535;
 }
 footer div li a p {
   margin: 0;

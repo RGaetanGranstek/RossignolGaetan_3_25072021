@@ -45,6 +45,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 20px;
+    margin: auto;
     p {
       color: $color-white;
       margin: 0;
@@ -102,24 +103,6 @@ ol {
     top: 50px;
     right: -15px;
     }
-  }
-}
-
-// section menu
-#menu div {
-  display: flex;
-  flex-direction: column;
-  .line {
-    height: 3px;
-    width: 40px;
-    background-color: $color-green-light;
-  }
-  h2 {
-    @include font-parameters(p);
-    text-transform: uppercase;
-  }
-  a {
-    display: flex;
   }
 }
 
