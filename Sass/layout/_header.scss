@@ -5,12 +5,12 @@ header {
         margin: auto 65px auto 20px;
         img:first-of-type {
             width: 52%;
-            margin: 0 27%;
+            margin: 0 24.5%;
         }
     }
     img:first-of-type {
         width: 40%;
-        margin: 0 30%;
+        margin: 0 28%;
         padding: 20px 0 10px 0;
     }
     #localisation {
@@ -24,7 +24,7 @@ header {
             background-color: $color-grey;
             width: 155px;
             text-align: center;
-            @include font-parameters(p)
+            @include font-parameters(inputBold)
         }
     }
     #reservation {

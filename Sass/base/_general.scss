@@ -2,7 +2,7 @@
 body {
   @include background-color;
 }
-#menu, .titleMenu, #reservation, #mainContent {
+#menu, .titleMenuRestaurant, #reservation, #mainContent {
   @include background-color($background-color: $color-grey-light);
 }
 #localisation {
@@ -105,10 +105,25 @@ ol {
   }
 }
 
-// heart animation
-.fa-heart {
-  transition: all 1s ease-out;
+// section menu
+#menu div {
+  display: flex;
+  flex-direction: column;
+  .line {
+    height: 3px;
+    width: 40px;
+    background-color: $color-green-light;
+  }
+  h2 {
+    @include font-parameters(p);
+    text-transform: uppercase;
+  }
+  a {
+    display: flex;
+  }
 }
-.fa-heart:hover, .fa-heart:focus {
+
+// heart animation
+.fa-heart:hover {
   @include heart-pink;
 }

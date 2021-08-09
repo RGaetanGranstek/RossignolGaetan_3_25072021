@@ -16,7 +16,9 @@ footer {
                 color: $color-white;
                 margin: 7px 0;
                 &:hover {
-                    text-decoration: underline;
+                    @include button-pink;
+                    padding: 3px;
+                    margin: -3px;
                 }
                 p {
                     margin:0;

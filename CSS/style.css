@@ -6123,7 +6123,7 @@ body {
   background: #ffffff;
 }
 
-#menu, .titleMenu, #reservation, #mainContent {
+#menu, .titleMenuRestaurant, #reservation, #mainContent {
   background: #f6f6f6;
 }
 
@@ -6234,11 +6234,26 @@ ol > li::before {
   right: -15px;
 }
 
-.fa-heart {
-  transition: all 1s ease-out;
+#menu div {
+  display: flex;
+  flex-direction: column;
+}
+#menu div .line {
+  height: 3px;
+  width: 40px;
+  background-color: #99E2D0;
+}
+#menu div h2 {
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#menu div a {
+  display: flex;
 }
 
-.fa-heart:hover, .fa-heart:focus {
+.fa-heart:hover {
+  animation: fill 0.3s ease-in-out;
   zoom: 1.2;
   background: linear-gradient(#FF79DA, #9356DC);
 }
@@ -6250,11 +6265,11 @@ header.arrow {
 }
 header.arrow img:first-of-type {
   width: 52%;
-  margin: 0 27%;
+  margin: 0 24.5%;
 }
 header img:first-of-type {
   width: 40%;
-  margin: 0 30%;
+  margin: 0 28%;
   padding: 20px 0 10px 0;
 }
 header #localisation {
@@ -6269,8 +6284,8 @@ header #localisation input {
   background-color: #eaeaea;
   width: 155px;
   text-align: center;
-  font-size: 1.1em;
-  font-weight: 400;
+  font-size: 0.95em;
+  font-weight: bold;
 }
 header #reservation {
   display: flex;
@@ -6294,11 +6309,12 @@ header #reservation a {
   margin: 15px auto;
 }
 
-section#functioning, section#mainContent, section#menu {
+section#mainContent, section#menu {
   padding: 30px 20px 45px 20px;
 }
 section#functioning {
   height: 420px;
+  padding: 30px 20px 0 20px;
 }
 section#functioning ol a {
   display: flex;
@@ -6348,6 +6364,24 @@ section#mainContent .boxImg .new p {
 section#mainContent .boxImg .notNew {
   display: none;
 }
+section.titleMenu {
+  position: relative;
+}
+section.titleMenu .titleMenuRestaurant {
+  position: absolute;
+  top: 205px;
+  right: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px 50px 0 0;
+  font-size: 1.1em;
+  font-weight: 600;
+}
 
 footer {
   position: absolute;
@@ -6371,7 +6405,11 @@ footer div li a {
   margin: 7px 0;
 }
 footer div li a:hover {
-  text-decoration: underline;
+  padding: 15px;
+  border-radius: 30px;
+  background: linear-gradient(165deg, #FF79DA, #9356DC);
+  padding: 3px;
+  margin: -3px;
 }
 footer div li a p {
   margin: 0;

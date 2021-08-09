@@ -54,6 +54,7 @@
 
 // heart-pink
 @mixin heart-pink {
+    animation: fill 0.3s ease-in-out;
     zoom: 1.2;
     background: linear-gradient($color-pink, $color-purple);
 }
@@ -71,5 +72,13 @@
     @else if $f-parameters == h1 {
         font-size: $font-H;
         font-weight: $font-M;
+    }
+    @else if $f-parameters == inputBold {
+        font-size: $font-Input;
+        font-weight: $font-M;
+    }
+    @else if $f-parameters == titleMenu {
+        font-size: $font-title;
+        font-weight: $font-L;
     }
 }
