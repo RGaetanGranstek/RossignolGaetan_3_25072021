@@ -58,9 +58,11 @@
 
 // heart-pink
 @mixin heart-pink {
-    animation: fill 0.3s ease-in-out;
     zoom: 1.2;
-    background: linear-gradient($color-secondary, $color-primary);
+    width: 100%;
+    color: transparent;
+    font-weight: $font-M;
+    background: linear-gradient(to left, $color-secondary, $color-primary);
 }
 
 // font Parameters

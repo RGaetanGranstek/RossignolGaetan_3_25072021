@@ -6239,10 +6239,18 @@ ol > li::before {
   right: -15px;
 }
 
-.fa-heart:hover {
-  animation: fill 0.3s ease-in-out;
+i.fa-heart {
+  display: inline-block;
+  width: 0%;
+  transition: all 0.3s ease-in-out 0s;
+  animation: all 0.3s ease-in-out;
+}
+i.fa-heart:hover {
   zoom: 1.2;
-  background: linear-gradient(#FF79DA, #9356DC);
+  width: 100%;
+  color: transparent;
+  font-weight: bold;
+  background: linear-gradient(to left, #FF79DA, #9356DC);
 }
 
 header img:first-of-type {
