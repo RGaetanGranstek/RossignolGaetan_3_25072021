@@ -49,7 +49,7 @@
 @mixin button-pink {
     padding: 15px;
     border-radius: 30px;
-    background: linear-gradient(165deg, $color-pink, $color-purple);
+    background: linear-gradient(165deg, $color-secondary, $color-primary);
     &:hover {
         filter: brightness(1.15);
         box-shadow: 0 1px 5px $color-grey-dark;
@@ -60,7 +60,7 @@
 @mixin heart-pink {
     animation: fill 0.3s ease-in-out;
     zoom: 1.2;
-    background: linear-gradient($color-pink, $color-purple);
+    background: linear-gradient($color-secondary, $color-primary);
 }
 
 // font Parameters

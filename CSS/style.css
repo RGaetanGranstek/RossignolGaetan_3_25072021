@@ -6295,7 +6295,7 @@ header.arrow img:first-of-type {
   width: 52%;
   margin: 0 24.5%;
 }
-header.arrow :hover {
+header.arrow a:hover {
   box-shadow: 0 4px 10px #d5d5d5;
 }
 
@@ -6411,12 +6411,23 @@ section#menu div a p {
   font-size: 0.9rem;
   margin: 3px 25px 15px 10px;
 }
+section#menu div a div:first-of-type {
+  flex-wrap: nowrap;
+}
+section#menu div a div:first-of-type > h3 + p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 section#menu div a .selectionButton {
   display: flex;
   flex-direction: row;
 }
 section#menu div a .selectionButton i {
   display: none;
+}
+section#menu div a:hover div:first-of-type p {
+  max-width: 80%;
 }
 section#menu div a:hover .selectionButton i {
   display: initial;

@@ -20,7 +20,7 @@ section {
     &#mainContent {
         .boxImg {
             .imgIndex {
-                box-shadow: 2px 2px 15px $color-grey-shadow;
+                box-shadow: 2px 2px 15px $color-shadow;
                 margin: 20px auto;
                 &:hover {
                     box-shadow: 0 0px 10px $color-grey-dark;
@@ -50,9 +50,9 @@ section {
                 position: absolute;
                 right: 2.5em;
                 margin: -255px 0px;
-                background-color: $color-green-light;
+                background-color: $color-tertiary-light;
                 p {
-                    color: $color-green-dark;
+                    color: $color-tertiary-dark;
                     margin: 5px;
                 }
             }
@@ -95,7 +95,7 @@ section {
             .line {
                 height: 3px;
                 width: 40px;
-                background-color: $color-green-light;
+                background-color: $color-tertiary-light;
                 margin-bottom: 5px;
             }
             a {
@@ -107,7 +107,7 @@ section {
                 width: 100%;
                 background-color: $color-white;
                 border-radius: $border-radius;
-                box-shadow: 0 4px 10px $color-grey-shadow;
+                box-shadow: 0 4px 10px $color-shadow;
                 h3 {
                 font-size: 1rem;
                 margin: 15px 10px 3px 10px;
@@ -116,21 +116,32 @@ section {
                 font-size: .9rem;
                 margin: 3px 25px 15px 10px;
                 }
+                div:first-of-type {
+                    flex-wrap: nowrap;
+                    >h3 + p {
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                }
                 .selectionButton {
                 display: flex;
                 flex-direction: row;
-                i {
-                    display: none;
-                }
+                    i {
+                        display: none;
+                    }
                 }
                 &:hover {
-                .selectionButton i {
-                    display: initial;
-                    justify-content: inherit;
-                    margin: auto 20px;
-                    width: 70px;
-                    color: $color-white;
-                    background-color: $color-green-light;
+                    div:first-of-type p {
+                        max-width: 80%;
+                    }
+                    .selectionButton i {
+                        display: initial;
+                        justify-content: inherit;
+                        margin: auto 20px;
+                        width: 70px;
+                        color: $color-white;
+                        background-color: $color-tertiary-light;
                     }
                 }
             }

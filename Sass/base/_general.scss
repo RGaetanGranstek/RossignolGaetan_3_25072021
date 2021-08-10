@@ -75,23 +75,23 @@ ol {
       top: -25px;
       border-radius: 25px;
       background-color: $color-grey-light;
-      box-shadow: 0 4px 10px $color-grey-shadow;
+      box-shadow: 0 4px 10px $color-shadow;
       padding: 10px 0 10px 20px;
       width: auto;
       p {
         @include font-parameters(pBold)
       }
       &:hover {
-        background-color: $color-purple-light;
+        background-color: $color-primary-light;
         i {
-          color: $color-purple;
+          color: $color-primary;
         }
       }
     }
     &::before {
     content: counter(li); 
     color: $color-white;
-    background-color: $color-purple;
+    background-color: $color-primary;
     border-radius: 45px;
     display: inline-block;
     width: 20px;

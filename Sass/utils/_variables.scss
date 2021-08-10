@@ -1,13 +1,13 @@
 //colors as defined
-$color-purple: #9356DC;
-$color-pink: #FF79DA;
-$color-green-light: #99E2D0;
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary-light: #99E2D0;
 
 //color extracted mockup
-$color-green-dark: #008766;
-$color-purple-light: #f5edff;
+$color-tertiary-dark: #008766;
+$color-primary-light: #f5edff;
 $color-grey-dark: #353535;
-$color-grey-shadow: #d5d5d5;
+$color-shadow: #d5d5d5;
 $color-grey: #eaeaea;
 $color-grey-light: #f6f6f6;
 $color-white: #ffffff;
@@ -40,7 +40,16 @@ $img-defaut-height: 255px;
 // A faire
 
 // animation remplissage coeur
+
 // animation check
+
 // overflow text quand mouvement check
+// margin: 0;
+// white-space: nowrap;
+// text-overflow: ellipsis;
+// overflow: hidden;
+// ne fonctionne pas
+
 // logo svg non fonctionnel sur gitpage mais ok ailleurs
+
 // mise en page desktop et tablette
