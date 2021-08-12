@@ -49,20 +49,58 @@
 @mixin button-pink {
     padding: 15px;
     border-radius: 30px;
-    background: linear-gradient(165deg, $color-secondary, $color-primary);
+    background: $color-button;
     &:hover {
         filter: brightness(1.15);
         box-shadow: 0 1px 5px $color-grey-dark;
     }
 }
 
-// heart-pink
-@mixin heart-pink {
-    zoom: 1.2;
-    width: 100%;
-    color: transparent;
-    font-weight: $font-M;
-    background: linear-gradient(to left, $color-secondary, $color-primary);
+// heart Animation
+@mixin heart-animation {
+    transition: all 600ms;
+    &:hover {
+        background: $color-heart;
+        color: transparent;
+        -webkit-background-clip: text;
+        font-weight: $font-M;
+        line-height: initial;
+        cursor: pointer;
+  }
+}
+
+// check animation
+@mixin check-animation {
+    transition: all 1000ms ease-in-out;
+    div:first-of-type {
+        white-space: nowrap;
+        overflow: hidden;
+        width: 320px;
+        h3, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    &:hover {
+        div:first-of-type>p {
+            margin-right: 5px;
+        }
+        .selectionButton {
+            p {
+                margin: 40px 20px 15px 15px;
+            }
+            i {
+                display: initial;
+                width: 60px;
+                padding: 25% 0 0 0;
+                border-radius: 0px 20px 20px 0;
+                text-align-last: center;
+                color: $color-white;
+                background-color: $color-tertiary-light;
+            }
+        }
+    }
 }
 
 // font Parameters

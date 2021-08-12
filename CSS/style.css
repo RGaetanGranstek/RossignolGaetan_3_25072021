@@ -6239,18 +6239,16 @@ ol > li::before {
   right: -15px;
 }
 
-i.fa-heart {
-  display: inline-block;
-  width: 0%;
-  transition: all 0.3s ease-in-out 0s;
-  animation: all 0.3s ease-in-out;
-}
 i.fa-heart:hover {
-  zoom: 1.2;
-  width: 100%;
+  transition: all 600ms;
+}
+i.fa-heart:hover:hover {
+  background: linear-gradient(to top, #FF79DA, #9356DC);
   color: transparent;
+  -webkit-background-clip: text;
   font-weight: bold;
-  background: linear-gradient(to left, #FF79DA, #9356DC);
+  line-height: initial;
+  cursor: pointer;
 }
 
 header img:first-of-type {
@@ -6410,40 +6408,50 @@ section#menu div a {
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 10px #d5d5d5;
+  transition: all 1000ms ease-in-out;
+}
+section#menu div a div:first-of-type {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 320px;
+}
+section#menu div a div:first-of-type h3, section#menu div a div:first-of-type p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+section#menu div a:hover div:first-of-type > p {
+  margin-right: 5px;
+}
+section#menu div a:hover .selectionButton p {
+  margin: 40px 20px 15px 15px;
+}
+section#menu div a:hover .selectionButton i {
+  display: initial;
+  width: 60px;
+  padding: 25% 0 0 0;
+  border-radius: 0px 20px 20px 0;
+  text-align-last: center;
+  color: #ffffff;
+  background-color: #99E2D0;
 }
 section#menu div a h3 {
   font-size: 1rem;
   margin: 15px 10px 3px 10px;
 }
-section#menu div a p {
+section#menu div a div:first-of-type > p {
+  font-size: 0.9rem;
+  margin: 3px 0px 15px 10px;
+}
+section#menu div a .selectionButton {
+  flex-direction: row;
+}
+section#menu div a .selectionButton p {
   font-size: 0.9rem;
   margin: 3px 25px 15px 10px;
 }
-section#menu div a div:first-of-type {
-  flex-wrap: nowrap;
-}
-section#menu div a div:first-of-type > h3 + p {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-section#menu div a .selectionButton {
-  display: flex;
-  flex-direction: row;
-}
 section#menu div a .selectionButton i {
   display: none;
-}
-section#menu div a:hover div:first-of-type p {
-  max-width: 80%;
-}
-section#menu div a:hover .selectionButton i {
-  display: initial;
-  justify-content: inherit;
-  margin: auto 20px;
-  width: 70px;
-  color: #ffffff;
-  background-color: #99E2D0;
 }
 
 footer {

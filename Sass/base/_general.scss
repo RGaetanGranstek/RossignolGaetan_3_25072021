@@ -106,13 +106,7 @@ ol {
   }
 }
 
-// heart animation
-i.fa-heart {
-  display: inline-block;
-  width: 0%;
-  transition: all 0.3s ease-in-out 0s;
-  animation: all 0.3s ease-in-out;
-  &:hover {
-    @include heart-pink;
-  }
+// heart Animation
+i.fa-heart:hover {
+  @include heart-animation;
 }
