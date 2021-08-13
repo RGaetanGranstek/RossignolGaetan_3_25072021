@@ -37,12 +37,19 @@ $border-radius: 20px;
 $img-defaut-width: 100%;
 $img-defaut-height: 255px;
 
-
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 // A faire
 
-// animation check
+// animation apparition menu
 
-//animation apparition menu
+// page loading
 
 // mise en page desktop et tablette

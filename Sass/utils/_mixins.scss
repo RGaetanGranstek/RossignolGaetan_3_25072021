@@ -88,7 +88,7 @@
         }
         .selectionButton>div {
             i {
-                transform: rotate(360deg);
+                animation: rotate 600ms;
             }
             opacity: 1;
             width: 60px;

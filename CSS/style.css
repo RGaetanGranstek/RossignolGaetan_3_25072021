@@ -6119,6 +6119,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   background: #ffffff;
 }
@@ -6429,7 +6437,7 @@ section#menu div a:hover .selectionButton > div {
   font-size: 1.5em;
 }
 section#menu div a:hover .selectionButton > div i {
-  transform: rotate(360deg);
+  animation: rotate 600ms;
 }
 section#menu div a h3 {
   font-size: 1rem;
@@ -6458,9 +6466,6 @@ section#menu div a .selectionButton div {
   border-radius: 0px 20px 20px 0;
   background-color: #99E2D0;
   transition: all 400ms ease-in-out;
-}
-section#menu div a .selectionButton div i {
-  transition: transform 400ms ease-in-out;
 }
 
 footer {
