@@ -102,7 +102,7 @@ section {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                align-items: flex-end;
+                overflow: hidden;
                 margin: 10px;
                 width: 100%;
                 background-color: $color-white;
@@ -119,12 +119,24 @@ section {
                 }
                 .selectionButton {
                     flex-direction: row;
+                    height: 73px;
                     p {
                         font-size: .9rem;
-                        margin: 3px 25px 15px 10px;
+                        padding-right: 0;
+                        margin: 40px 25px 15px 10px;
                     }
                     i {
-                        display: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        right: -40px;
+                        width: 0;
+                        opacity: 0;
+                        color: $color-white;
+                        border-radius: 0px 20px 20px 0;
+                        background-color: $color-tertiary-light;
+                        transition: all 600ms ease-in-out;
                     }
                 }
             }

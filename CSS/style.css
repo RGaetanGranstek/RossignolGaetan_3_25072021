@@ -6214,7 +6214,7 @@ ol > li a {
   width: auto;
 }
 ol > li a p {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
 }
 ol > li a:hover {
@@ -6285,7 +6285,7 @@ header #reservation h1 {
   margin: 5px auto;
 }
 header #reservation > p:first-of-type {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
   margin: 16px 2%;
 }
@@ -6387,7 +6387,7 @@ section#menu div {
   flex-direction: column;
 }
 section#menu div h2 {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 4px;
@@ -6402,13 +6402,12 @@ section#menu div a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  overflow: hidden;
   margin: 10px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 20px;
   box-shadow: 0 4px 10px #d5d5d5;
-  transition: all 1000ms ease-in-out;
 }
 section#menu div a div:first-of-type {
   white-space: nowrap;
@@ -6423,17 +6422,11 @@ section#menu div a div:first-of-type h3, section#menu div a div:first-of-type p 
 section#menu div a:hover div:first-of-type > p {
   margin-right: 5px;
 }
-section#menu div a:hover .selectionButton p {
-  margin: 40px 20px 15px 15px;
-}
-section#menu div a:hover .selectionButton i {
-  display: initial;
+section#menu div a:hover .selectionButton > i {
+  font-size: 1.5em;
   width: 60px;
-  padding: 25% 0 0 0;
-  border-radius: 0px 20px 20px 0;
-  text-align-last: center;
-  color: #ffffff;
-  background-color: #99E2D0;
+  opacity: 1;
+  right: 0;
 }
 section#menu div a h3 {
   font-size: 1rem;
@@ -6445,13 +6438,25 @@ section#menu div a div:first-of-type > p {
 }
 section#menu div a .selectionButton {
   flex-direction: row;
+  height: 73px;
 }
 section#menu div a .selectionButton p {
   font-size: 0.9rem;
-  margin: 3px 25px 15px 10px;
+  padding-right: 0;
+  margin: 40px 25px 15px 10px;
 }
 section#menu div a .selectionButton i {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -40px;
+  width: 0;
+  opacity: 0;
+  color: #ffffff;
+  border-radius: 0px 20px 20px 0;
+  background-color: #99E2D0;
+  transition: all 600ms ease-in-out;
 }
 
 footer {

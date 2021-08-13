@@ -71,7 +71,6 @@
 
 // check animation
 @mixin check-animation {
-    transition: all 1000ms ease-in-out;
     div:first-of-type {
         white-space: nowrap;
         overflow: hidden;
@@ -86,19 +85,11 @@
         div:first-of-type>p {
             margin-right: 5px;
         }
-        .selectionButton {
-            p {
-                margin: 40px 20px 15px 15px;
-            }
-            i {
-                display: initial;
-                width: 60px;
-                padding: 25% 0 0 0;
-                border-radius: 0px 20px 20px 0;
-                text-align-last: center;
-                color: $color-white;
-                background-color: $color-tertiary-light;
-            }
+        .selectionButton>i {
+            font-size: $font-H;
+            width: 60px;
+            opacity: 1;
+            right: 0;
         }
     }
 }
