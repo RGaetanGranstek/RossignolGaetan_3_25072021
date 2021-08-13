@@ -71,8 +71,8 @@ section {
             right: 0;
             left: 0;
             padding-top: 10px;
-            padding-left: 15px;
-            padding-right: 20px;
+            padding-left: 20px;
+            padding-right: 40px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -120,23 +120,24 @@ section {
                 .selectionButton {
                     flex-direction: row;
                     height: 73px;
+                    transition: all 600ms ease-in-out;
                     p {
                         font-size: .9rem;
-                        padding-right: 0;
                         margin: 40px 25px 15px 10px;
                     }
-                    i {
+                    div {
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        position: relative;
-                        right: -40px;
                         width: 0;
                         opacity: 0;
                         color: $color-white;
                         border-radius: 0px 20px 20px 0;
                         background-color: $color-tertiary-light;
-                        transition: all 600ms ease-in-out;
+                        transition: all 400ms ease-in-out;
+                        i {
+                            transition: transform 400ms ease-in-out;
+                        }
                     }
                 }
             }

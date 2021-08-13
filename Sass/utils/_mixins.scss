@@ -84,12 +84,15 @@
     &:hover {
         div:first-of-type>p {
             margin-right: 5px;
+            background-color: $color-white;
         }
-        .selectionButton>i {
-            font-size: $font-H;
-            width: 60px;
+        .selectionButton>div {
+            i {
+                transform: rotate(360deg);
+            }
             opacity: 1;
-            right: 0;
+            width: 60px;
+            font-size: $font-H;
         }
     }
 }

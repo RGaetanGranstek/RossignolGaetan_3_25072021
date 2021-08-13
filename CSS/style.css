@@ -6370,8 +6370,8 @@ section.titleMenu .titleMenuRestaurant {
   right: 0;
   left: 0;
   padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6421,12 +6421,15 @@ section#menu div a div:first-of-type h3, section#menu div a div:first-of-type p 
 }
 section#menu div a:hover div:first-of-type > p {
   margin-right: 5px;
+  background-color: #ffffff;
 }
-section#menu div a:hover .selectionButton > i {
-  font-size: 1.5em;
-  width: 60px;
+section#menu div a:hover .selectionButton > div {
   opacity: 1;
-  right: 0;
+  width: 60px;
+  font-size: 1.5em;
+}
+section#menu div a:hover .selectionButton > div i {
+  transform: rotate(360deg);
 }
 section#menu div a h3 {
   font-size: 1rem;
@@ -6439,24 +6442,25 @@ section#menu div a div:first-of-type > p {
 section#menu div a .selectionButton {
   flex-direction: row;
   height: 73px;
+  transition: all 600ms ease-in-out;
 }
 section#menu div a .selectionButton p {
   font-size: 0.9rem;
-  padding-right: 0;
   margin: 40px 25px 15px 10px;
 }
-section#menu div a .selectionButton i {
+section#menu div a .selectionButton div {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  right: -40px;
   width: 0;
   opacity: 0;
   color: #ffffff;
   border-radius: 0px 20px 20px 0;
   background-color: #99E2D0;
-  transition: all 600ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+section#menu div a .selectionButton div i {
+  transition: transform 400ms ease-in-out;
 }
 
 footer {
