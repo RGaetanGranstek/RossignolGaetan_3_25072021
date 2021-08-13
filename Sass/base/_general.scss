@@ -110,3 +110,14 @@ ol {
 i.fa-heart:hover {
   @include heart-animation;
 }
+
+// Animation Menu
+#starter {
+  animation: animation-menu 2s ease-in-out;
+}
+#dish {
+  animation: animation-menu 3.5s ease-in-out;
+}
+#dessert {
+  animation: animation-menu 5s ease-in-out;
+}

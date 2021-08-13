@@ -46,6 +46,16 @@ $img-defaut-height: 255px;
     }
 }
 
+@keyframes animation-menu {
+    0% {
+        opacity: 0;
+        margin-top: 40px;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 // A faire
 
 // animation apparition menu
