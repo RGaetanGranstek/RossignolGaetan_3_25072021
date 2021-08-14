@@ -23,14 +23,6 @@
 }
 
 // Loader
-@keyframes loader-body {
-    0% {
-        overflow: hidden;
-    }
-    100% {
-        overflow: hidden;
-    }
-}
 @keyframes loader {
     0% {
         z-index: 30;

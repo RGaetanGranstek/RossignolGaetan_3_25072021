@@ -6139,14 +6139,6 @@ readers do not read off random characters that represent icons */
     opacity: 1;
   }
 }
-@keyframes loader-body {
-  0% {
-    overflow: hidden;
-  }
-  100% {
-    overflow: hidden;
-  }
-}
 @keyframes loader {
   0% {
     z-index: 30;
@@ -6208,7 +6200,6 @@ footer {
 body {
   margin: 0;
   padding: 0;
-  animation: loader-body 3s;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
@@ -6319,7 +6310,7 @@ i.fa-heart:hover:hover {
 
 #loader {
   display: flex;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   bottom: 0;

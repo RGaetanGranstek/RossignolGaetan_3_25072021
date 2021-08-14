@@ -28,7 +28,6 @@ footer {
 body {
   @include breakpoint(mobileonly);
   @include reset;
-  animation: loader-body 3s;
   font-family: $font-family-text;
   font-weight: normal;
   img {
@@ -126,7 +125,7 @@ i.fa-heart:hover {
 // loader
 #loader {
   display: flex;
-  position: absolute;
+  position: fixed;
   z-index: -1;
   top: 0;
   bottom: 0;
