@@ -6220,7 +6220,7 @@ body .buttonPink {
   display: flex;
   flex-direction: row;
   height: 20px;
-  margin: auto;
+  margin: 50px auto 35px auto;
 }
 body .buttonPink:hover {
   filter: brightness(1.15);
@@ -6228,7 +6228,7 @@ body .buttonPink:hover {
 }
 body .buttonPink p {
   color: #ffffff;
-  margin: 0;
+  margin: 0 20px;
 }
 body ul {
   padding: 0;
@@ -6322,15 +6322,11 @@ i.fa-heart:hover:hover {
   animation: loader 3s;
 }
 #loader img {
-  padding-top: 4%;
-  padding-bottom: 55%;
-}
-@media (min-width: 37.5em) {
-  #loader img {
-    padding-bottom: 15%;
-  }
+  padding-top: 20px;
 }
 #loader .loader {
+  position: relative;
+  top: 35%;
   width: auto;
   height: auto;
 }
@@ -6515,9 +6511,16 @@ i.fa-heart:hover:hover {
 }
 
 header img:first-of-type {
-  width: 40%;
-  margin: 0 28%;
+  position: relative;
+  left: 10px;
+  width: auto;
+  margin: auto;
   padding: 20px 0 10px 0;
+}
+@media (min-width: 550px) {
+  header img:first-of-type {
+    height: 60px;
+  }
 }
 header #localisation {
   display: flex;
@@ -6540,6 +6543,11 @@ header #reservation {
   height: 290px;
   justify-content: center;
 }
+@media (min-width: 550px) {
+  header #reservation {
+    height: 200px;
+  }
+}
 header #reservation h1 {
   font-size: 1.5em;
   font-weight: bold;
@@ -6561,8 +6569,15 @@ header.arrow {
   margin: auto 65px auto 20px;
 }
 header.arrow img:first-of-type {
-  width: 52%;
-  margin: 0 24.5%;
+  position: relative;
+  width: auto;
+  margin: auto;
+  padding: 20px 0 10px 0;
+}
+@media (min-width: 550px) {
+  header.arrow img:first-of-type {
+    height: 60px;
+  }
 }
 header.arrow a:hover {
   box-shadow: 0 4px 10px #d5d5d5;
@@ -6575,30 +6590,60 @@ section#functioning {
   height: 420px;
   padding: 30px 20px 0 20px;
 }
-section#functioning ol a {
+@media (min-width: 550px) {
+  section#functioning {
+    height: auto;
+  }
+}
+@media (min-width: 550px) {
+  section#functioning ol {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 550px) {
+  section#functioning ol li {
+    width: 30%;
+  }
+}
+section#functioning ol li a {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-section#functioning ol a > i, section#functioning ol a > p {
-  padding-left: 20px;
+@media (min-width: 550px) {
+  section#functioning ol li a {
+    margin: 0 5px;
+    padding: 5px 0;
+    flex-direction: column;
+  }
 }
-section#mainContent .boxImg .imgIndex {
+section#functioning ol li a > i, section#functioning ol li a > p {
+  padding-left: 20px;
+  position: relative;
+}
+@media (min-width: 550px) {
+  section#functioning ol li a > i, section#functioning ol li a > p {
+    padding-left: 10px;
+    margin: 10px 10px 10px 0;
+  }
+}
+section#mainContent div .boxImg .imgIndex {
   box-shadow: 2px 2px 15px #d5d5d5;
   margin: 20px auto;
 }
-section#mainContent .boxImg .imgIndex:hover {
+section#mainContent div .boxImg .imgIndex:hover {
   box-shadow: 0 0px 10px #353535;
   cursor: pointer;
 }
-section#mainContent .boxImg .infoImg {
+section#mainContent div .boxImg .infoImg {
   height: 80px;
   margin: -100px 4px;
   padding-left: 15px;
   padding-right: 20px;
   justify-content: space-between;
 }
-section#mainContent .boxImg > div {
+section#mainContent div .boxImg > div {
   display: flex;
   align-items: center;
   position: absolute;
@@ -6607,22 +6652,27 @@ section#mainContent .boxImg > div {
   background-color: #ffffff;
   border-radius: 0 0 20px 20px;
 }
-section#mainContent .boxImg > div h3, section#mainContent .boxImg > div p {
+section#mainContent div .boxImg > div h3, section#mainContent div .boxImg > div p {
   margin: 0;
   padding: 0;
 }
-section#mainContent .boxImg .new {
+section#mainContent div .boxImg .new {
   position: absolute;
   right: 2.5em;
   margin: -255px 0px;
   background-color: #99E2D0;
 }
-section#mainContent .boxImg .new p {
+section#mainContent div .boxImg .new p {
   color: #008766;
   margin: 5px;
 }
-section#mainContent .boxImg .notNew {
+section#mainContent div .boxImg .notNew {
   display: none;
+}
+@media (min-width: 550px) {
+  section#mainContent div {
+    display: contents;
+  }
 }
 section.titleMenu {
   position: relative;
@@ -6642,26 +6692,34 @@ section.titleMenu .titleMenuRestaurant {
   font-size: 1.1em;
   font-weight: 600;
 }
-section#menu > div {
-  margin-bottom: 20px;
+@media (min-width: 64em) {
+  section#menu > div {
+    justify-content: space-around;
+  }
 }
-section#menu div {
+@media (min-width: 64em) {
+  section#menu div {
+    display: flex;
+    flex-direction: row;
+  }
+}
+section#menu div div {
   display: flex;
   flex-direction: column;
 }
-section#menu div h2 {
+section#menu div div h2 {
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 4px;
 }
-section#menu div .line {
+section#menu div div .line {
   height: 3px;
   width: 40px;
   background-color: #99E2D0;
   margin-bottom: 5px;
 }
-section#menu div a {
+section#menu div div a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -6672,46 +6730,51 @@ section#menu div a {
   border-radius: 20px;
   box-shadow: 0 4px 10px #d5d5d5;
 }
-section#menu div a div:first-of-type {
+section#menu div div a div:first-of-type {
   white-space: nowrap;
   overflow: hidden;
   width: 320px;
 }
-section#menu div a div:first-of-type h3, section#menu div a div:first-of-type p {
+section#menu div div a div:first-of-type h3, section#menu div div a div:first-of-type p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-section#menu div a:hover div:first-of-type > p {
+section#menu div div a:hover div:first-of-type > p {
   margin-right: 5px;
   background-color: #ffffff;
 }
-section#menu div a:hover .selectionButton > div {
+section#menu div div a:hover .selectionButton > div {
   opacity: 1;
   width: 60px;
   font-size: 1.5em;
 }
-section#menu div a:hover .selectionButton > div i {
+section#menu div div a:hover .selectionButton > div i {
   animation: rotate 600ms;
 }
-section#menu div a h3 {
+@media (min-width: 64em) {
+  section#menu div div a {
+    width: 315px;
+  }
+}
+section#menu div div a h3 {
   font-size: 1rem;
   margin: 15px 10px 3px 10px;
 }
-section#menu div a div:first-of-type > p {
+section#menu div div a div:first-of-type > p {
   font-size: 0.9rem;
   margin: 3px 0px 15px 10px;
 }
-section#menu div a .selectionButton {
+section#menu div div a .selectionButton {
   flex-direction: row;
   height: 73px;
   transition: all 600ms ease-in-out;
 }
-section#menu div a .selectionButton p {
+section#menu div div a .selectionButton p {
   font-size: 0.9rem;
   margin: 40px 25px 15px 10px;
 }
-section#menu div a .selectionButton div {
+section#menu div div a .selectionButton div {
   display: flex;
   align-items: center;
   justify-content: center;

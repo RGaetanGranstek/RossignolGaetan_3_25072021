@@ -45,10 +45,10 @@ body {
     display: flex;
     flex-direction: row;
     height: 20px;
-    margin: auto;
+    margin: 50px auto 35px auto;
     p {
       color: $color-white;
-      margin: 0;
+      margin: 0 20px;
     }
   }
   ul {
@@ -136,13 +136,11 @@ i.fa-heart:hover {
   background: $color-white;
   animation: loader 3s;
   img {
-    padding-top: 4%;
-    padding-bottom: 55%;
-    @include breakpoint(phablet) {
-      padding-bottom: 15%;
-    }
+    padding-top: 20px;
   }
   .loader {
+    position: relative;
+    top: 35%;
     @include obj(auto,auto,null);
     ul {
       display: grid;

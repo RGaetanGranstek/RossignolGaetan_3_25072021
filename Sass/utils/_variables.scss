@@ -1,9 +1,9 @@
-//colors as defined
+// colors as defined
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary-light: #99E2D0;
 
-//color extracted mockup
+// color extracted mockup
 $color-tertiary-dark: #008766;
 $color-primary-light: #f5edff;
 $color-grey-dark: #353535;
@@ -14,27 +14,27 @@ $color-white: #ffffff;
 $color-button: linear-gradient(165deg, $color-secondary, $color-primary);
 $color-heart: linear-gradient(to top, $color-secondary, $color-primary);
 
-//font family
+// font family
 $font-family-text: 'Roboto', sans-serif;
 $font-family-logo-title: 'Shrikhand', cursive;
 
-//size
+// size
 $font-loader: 2.5em;
 $font-title: 1.1em;
 $font-H: 1.5em;
 $font-P: 1em;
 $font-Input: 0.95em;
 
-//weight
+// weight
 $font-S: 400;
 $font-L: 600;
 $font-M: bold;
 
-//Border-radius
+// Border-radius
 $border-none: 0;
 $border-radius: 20px;
 
-//sizes img
+// sizes img
 $img-defaut-width: 100%;
 $img-defaut-height: 255px;
 
@@ -46,4 +46,5 @@ $foCol: 19 24;
 
 // A faire
 
-// mise en page desktop et tablette
+// mise en page laptop et desktop
+// laptop (ajuster largeur des liens check)
