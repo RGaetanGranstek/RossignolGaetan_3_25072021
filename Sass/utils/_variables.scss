@@ -19,6 +19,7 @@ $font-family-text: 'Roboto', sans-serif;
 $font-family-logo-title: 'Shrikhand', cursive;
 
 //size
+$font-loader: 2.5em;
 $font-title: 1.1em;
 $font-H: 1.5em;
 $font-P: 1em;
@@ -37,29 +38,12 @@ $border-radius: 20px;
 $img-defaut-width: 100%;
 $img-defaut-height: 255px;
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes animation-menu {
-    0% {
-        opacity: 0;
-        margin-top: 40px;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+// loader
+$fCol: 1 6 11 16 21;
+$sCol: 7 12 17 22;
+$tCol: 13 18 23;
+$foCol: 19 24;
 
 // A faire
-
-// animation apparition menu
-
-// page loading
 
 // mise en page desktop et tablette

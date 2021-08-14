@@ -10,7 +10,8 @@
 @import "CSS/fontawesome/scss/regular.scss";
 @import "CSS/fontawesome/scss/solid.scss";
 
-//import variables and mixins
+//import keyframes, variables and mixins
+@import "utils/keyframes";
 @import "utils/variables";
 @import "utils/mixins";
 
