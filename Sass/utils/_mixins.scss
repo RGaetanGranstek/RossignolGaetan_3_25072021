@@ -48,16 +48,12 @@
 
 // heart Animation
 @mixin heart-animation {
-    transition: all 100ms;
-    animation: heart-animation 1s ease-out;
-    &:hover {
-        background: $color-heart;
-        color: transparent;
-        -webkit-background-clip: text;
-        font-weight: $font-M;
-        line-height: initial;
-        cursor: pointer;
-  }
+    background: $color-heart;
+    color: transparent;
+    -webkit-background-clip: text;
+    font-weight: $font-M;
+    line-height: initial;
+    cursor: pointer;
 }
 
 // check animation

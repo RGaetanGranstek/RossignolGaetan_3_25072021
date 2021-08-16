@@ -60,6 +60,9 @@ section {
                     @include breakpoint(laptop-desktop) {
                         margin: -100px auto;
                     } 
+                    div {
+                        display: grid;
+                    }
                 }
                 &>div {
                     display: flex;
@@ -133,6 +136,9 @@ section {
             justify-content: space-between;
             border-radius: 50px 50px 0 0;
             @include font-parameters(titleMenu);
+            div {
+                display: grid;
+            }
         }
     }
     &#menu {

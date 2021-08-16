@@ -107,8 +107,19 @@ ol {
 }
 
 // heart Animation
-i.fa-heart:hover {
-  @include heart-animation;
+i.fa-heart {
+  &:hover {
+    @include breakpoint (tablet){
+      animation: heart-animation 800ms ease-out;
+      @include heart-animation;
+    }
+  }
+  &:active, &:hover {
+    @include breakpoint (mobileonly){
+      animation: heart-animation 800ms ease-out;
+      @include heart-animation;
+    }
+}
 }
 
 // Animation Menu
