@@ -6321,6 +6321,9 @@ i.fa-heart:hover:hover {
   background: #ffffff;
   animation: loader 3s;
 }
+#loader h2 {
+  display: none;
+}
 #loader img {
   padding-top: 20px;
 }
@@ -6677,6 +6680,8 @@ section#mainContent div .boxImg > div h3, section#mainContent div .boxImg > div 
 }
 section#mainContent div .boxImg .new {
   position: absolute;
+  left: inherit;
+  border-radius: inherit;
   right: 2.5em;
   margin: -255px 0px;
   background-color: #99E2D0;

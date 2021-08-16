@@ -135,6 +135,9 @@ i.fa-heart:hover {
   align-items: center;
   background: $color-white;
   animation: loader 3s;
+  h2 {
+    display: none;
+  }
   img {
     padding-top: 20px;
   }

@@ -84,6 +84,8 @@ section {
                 }
                 .new {
                     position: absolute;
+                    left: inherit;
+                    border-radius: inherit;
                     right: 2.5em;
                     margin: -255px 0px;
                     background-color: $color-tertiary-light;
