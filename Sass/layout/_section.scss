@@ -31,6 +31,7 @@ section {
                         padding-left: 20px;
                         position: relative;
                         @include breakpoint(tablet) {
+                            text-align: center;
                             padding-left: 10px;
                             margin: 10px 10px 10px 0;
                         }
@@ -56,6 +57,9 @@ section {
                     padding-left: 15px;
                     padding-right: 20px;
                     justify-content: space-between;
+                    @include breakpoint(laptop-desktop) {
+                        margin: -100px auto;
+                    } 
                 }
                 &>div {
                     display: flex;
@@ -67,7 +71,16 @@ section {
                     border-radius: 0 0 20px 20px;
                     h3, p {
                         @include reset;
+                        @include breakpoint(laptop-desktop) {
+                            text-align: center;
+                            align-self: center;
+                        }
                     }
+                    @include breakpoint(laptop-desktop) {
+                        position: relative;
+                        left: auto;
+                        right: auto;
+                    } 
                 }
                 .new {
                     position: absolute;
@@ -78,14 +91,27 @@ section {
                         color: $color-tertiary-dark;
                         margin: 5px;
                     }
+                    @include breakpoint(laptop-desktop) {
+                        margin: -255px -20px;
+                    } 
                 }
                 .notNew {
                     display: none;
                 }
+                @include breakpoint(laptop-desktop) {
+                    position: relative;
+                    width: auto;
+                    margin: auto 5%;
+                    height: 300px;
+                } 
             }
             @include breakpoint(tablet) {
                 display: contents;
-            }   
+            }  
+            @include breakpoint(laptop-desktop) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            } 
         }
     }
     // End Page Index
@@ -109,18 +135,21 @@ section {
     }
     &#menu {
         &>div {
-            @include breakpoint(laptop) {
+            @include breakpoint(laptop-desktop) {
                 justify-content: space-around
             }
         }
         div {
             & {
-                @include breakpoint(laptop) {
+                @include breakpoint(laptop-desktop) {
                 display: flex;
-                flex-direction: row;
                 }
-
-            }  
+            } 
+            &>div {
+                @include breakpoint (laptop-desktop) {
+                    width: 33%
+                }
+            }
             div {
                 display: flex;
                 flex-direction: column;
@@ -146,8 +175,8 @@ section {
                     border-radius: $border-radius;
                     box-shadow: 0 4px 10px $color-shadow;
                     @include check-animation;
-                    @include breakpoint(laptop) {
-                        width: 315px;
+                    @include breakpoint(laptop-desktop) {
+                        width: 95%;
                     }
                     h3 {
                         font-size: 1rem;

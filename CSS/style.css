@@ -6341,7 +6341,7 @@ i.fa-heart:hover:hover {
   height: 40px;
   background: linear-gradient(165deg, #FF79DA, #9356DC);
   border-radius: 4px;
-  box-shadow: 0 0 1px #fff, 0 0 5px #008766, 0 0 10px #99E2D0, 0 0 15px #008766, 0 0 25px #99E2D0, 0 0 55px #008766;
+  box-shadow: 0 0 1px #ffffff, 0 0 5px #008766, 0 0 10px #99E2D0, 0 0 15px #008766, 0 0 25px #99E2D0, 0 0 55px #008766;
   animation: scale-loader 0.8s linear alternate infinite;
 }
 #loader .loader li:nth-child(1) {
@@ -6624,6 +6624,7 @@ section#functioning ol li a > i, section#functioning ol li a > p {
 }
 @media (min-width: 550px) {
   section#functioning ol li a > i, section#functioning ol li a > p {
+    text-align: center;
     padding-left: 10px;
     margin: 10px 10px 10px 0;
   }
@@ -6643,6 +6644,11 @@ section#mainContent div .boxImg .infoImg {
   padding-right: 20px;
   justify-content: space-between;
 }
+@media (min-width: 64em) {
+  section#mainContent div .boxImg .infoImg {
+    margin: -100px auto;
+  }
+}
 section#mainContent div .boxImg > div {
   display: flex;
   align-items: center;
@@ -6656,6 +6662,19 @@ section#mainContent div .boxImg > div h3, section#mainContent div .boxImg > div 
   margin: 0;
   padding: 0;
 }
+@media (min-width: 64em) {
+  section#mainContent div .boxImg > div h3, section#mainContent div .boxImg > div p {
+    text-align: center;
+    align-self: center;
+  }
+}
+@media (min-width: 64em) {
+  section#mainContent div .boxImg > div {
+    position: relative;
+    left: auto;
+    right: auto;
+  }
+}
 section#mainContent div .boxImg .new {
   position: absolute;
   right: 2.5em;
@@ -6666,12 +6685,31 @@ section#mainContent div .boxImg .new p {
   color: #008766;
   margin: 5px;
 }
+@media (min-width: 64em) {
+  section#mainContent div .boxImg .new {
+    margin: -255px -20px;
+  }
+}
 section#mainContent div .boxImg .notNew {
   display: none;
+}
+@media (min-width: 64em) {
+  section#mainContent div .boxImg {
+    position: relative;
+    width: auto;
+    margin: auto 5%;
+    height: 300px;
+  }
 }
 @media (min-width: 550px) {
   section#mainContent div {
     display: contents;
+  }
+}
+@media (min-width: 64em) {
+  section#mainContent div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 section.titleMenu {
@@ -6700,7 +6738,11 @@ section.titleMenu .titleMenuRestaurant {
 @media (min-width: 64em) {
   section#menu div {
     display: flex;
-    flex-direction: row;
+  }
+}
+@media (min-width: 64em) {
+  section#menu div > div {
+    width: 33%;
   }
 }
 section#menu div div {
@@ -6754,7 +6796,7 @@ section#menu div div a:hover .selectionButton > div i {
 }
 @media (min-width: 64em) {
   section#menu div div a {
-    width: 315px;
+    width: 95%;
   }
 }
 section#menu div div a h3 {

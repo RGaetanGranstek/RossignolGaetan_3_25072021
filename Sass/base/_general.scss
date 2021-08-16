@@ -151,7 +151,7 @@ i.fa-heart:hover {
     li {
       @include obj(40px,40px, $color-button);
       border-radius: 4px;
-      box-shadow: 0 0 1px #fff, 0 0 5px $color-tertiary-dark, 0 0 10px $color-tertiary-light, 0 0 15px $color-tertiary-dark, 0 0 25px $color-tertiary-light, 0 0 55px $color-tertiary-dark;
+      box-shadow: 0 0 1px $color-white, 0 0 5px $color-tertiary-dark, 0 0 10px $color-tertiary-light, 0 0 15px $color-tertiary-dark, 0 0 25px $color-tertiary-light, 0 0 55px $color-tertiary-dark;
       animation: scale-loader 0.8s linear alternate infinite;
       @for $i from 1 through 25 {
         &:nth-child(#{$i}) {
