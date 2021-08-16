@@ -48,7 +48,8 @@
 
 // heart Animation
 @mixin heart-animation {
-    transition: all 600ms;
+    transition: all 100ms;
+    animation: heart-animation 1s ease-out;
     &:hover {
         background: $color-heart;
         color: transparent;
