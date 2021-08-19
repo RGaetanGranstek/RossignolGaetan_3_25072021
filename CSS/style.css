@@ -6757,8 +6757,11 @@ section.titleMenu .titleMenuRestaurant {
   align-items: center;
   justify-content: space-between;
   border-radius: 50px 50px 0 0;
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 600;
+}
+section.titleMenu .titleMenuRestaurant h1 {
+  font-size: 1.3em;
 }
 section.titleMenu .titleMenuRestaurant div {
   display: grid;

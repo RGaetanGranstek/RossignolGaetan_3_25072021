@@ -136,6 +136,9 @@ section {
             justify-content: space-between;
             border-radius: 50px 50px 0 0;
             @include font-parameters(titleMenu);
+            h1 {
+                font-size: $font-title;
+            }
             div {
                 display: grid;
             }
